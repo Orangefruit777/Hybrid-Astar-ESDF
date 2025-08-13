@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="car">
+  <link name="ground_link">
+    <visual name="base_visual">
+      <origin xyz="0.2 0 0" rpy="1.5708 0 -1.5708" />
+      <geometry>
+        <mesh filename="package://hybrid_a_star/model/car_model/CAR_original.dae" scale="0.5 0.5 0.5"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
