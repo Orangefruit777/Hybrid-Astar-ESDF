@@ -32,6 +32,4 @@
     <!-- <node pkg="hybrid_a_star" type="map_publish" name="map_publish" output="screen"/> -->
     <node pkg="hybrid_a_star" type="map_publish_y" name="map_publish" output="screen"/>
 
-    <node pkg="hybrid_a_star" type="dy_obs_pub" name="dy_obs_pub" output="screen"/>
-
 </launch>

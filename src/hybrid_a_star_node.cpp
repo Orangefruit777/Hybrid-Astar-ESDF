@@ -174,10 +174,10 @@ void HybridAStarFlow::Run() {
             ros::Time optimize_end = ros::Time::now();
             std::cout << "\033[1;32moptimize time : " << (optimize_end - optimize_start).toSec() * 1000 << " ms\033[0m" << std::endl;
 
-            ros::Time cubic_sample_start = ros::Time::now();
+            ros::Time quintic_sample_start = ros::Time::now();
             VectorVec3d quintic_path = QuinticSpline::fitQuinticSpline(smooth_path, 0.1, 1.0);
-            ros::Time cubic_sample_end = ros::Time::now();
-            std::cout << "cubic sample time : " << (cubic_sample_end - cubic_sample_start).toSec() * 1000 << " ms" << std::endl;
+            ros::Time quintic_sample_end = ros::Time::now();
+            std::cout << "quintic sample time : " << (quintic_sample_end - quintic_sample_start).toSec() * 1000 << " ms" << std::endl;
 
             std::cout << "-----------------------------" << std::endl;
 
